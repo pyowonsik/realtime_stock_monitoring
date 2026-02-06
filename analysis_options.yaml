@@ -1,0 +1,23 @@
+include: package:very_good_analysis/analysis_options.yaml
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+
+linter:
+  rules:
+    # 프로젝트에 맞게 일부 규칙 비활성화
+    public_member_api_docs: false
+
+    # 80자 라인 제한은 현대적인 IDE에서 너무 제한적
+    lines_longer_than_80_chars: false
+
+    # 지역 변수 타입 명시가 가독성에 도움이 되는 경우가 많음
+    omit_local_variable_types: false
+
+    # 스트림 구독은 명시적으로 관리되는 경우 false positive 발생
+    cancel_subscriptions: false
+
+    # prefer_int_literals: 상황에 따라 double이 더 명확한 경우가 있음
+    prefer_int_literals: false
