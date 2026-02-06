@@ -10,13 +10,13 @@
 |:---:|:---:|:---:|
 | <img src="preview/all_stock.png" width="150"/> | <img src="preview/favorite_stock.png" width="150"/> | <img src="preview/notification_list.png" width="150"/> |
 
-| 상세 - 목표가 설정 | 상세 - 확장 패널 | 상세 - 정보 |
+| 상세 - 실시간 가격 | 상세 - 목표가 설정 | 상세 - 확장 패널 |
 |:---:|:---:|:---:|
-| <img src="preview/detail_target.png" width="150"/> | <img src="preview/detail_pannel.png" width="150"/> | <img src="preview/detail_info.png" width="150"/> |
+| <img src="preview/realtime_price.png" width="150"/> | <img src="preview/detail_target.png" width="150"/> | <img src="preview/detail_pannel.png" width="150"/> |
 
-| 목표가 도달 알림 |
-|:---:|
-| <img src="preview/alert.png" width="150"/> |
+| 상세 - 정보 | 목표가 도달 알림 |
+|:---:|:---:|
+| <img src="preview/detail_info.png" width="150"/> | <img src="preview/alert.png" width="150"/> |
 
 ---
 
@@ -31,8 +31,8 @@
 ## 실행 방법
 
 ### 요구사항
-- Flutter SDK 3.10.0 이상
-- Dart SDK 3.0.0 이상
+- Flutter SDK 3.27.0 이상
+- Dart SDK 3.10.3 이상
 
 ### 설치 및 실행
 
