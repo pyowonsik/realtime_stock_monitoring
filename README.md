@@ -1,6 +1,32 @@
-# Realtime Item - 실시간 관심 종목 모니터링 앱
+# Realtime Stock Monitoring - 실시간 관심 종목 모니터링 앱
 
 실시간 가격 업데이트와 목표가 알림 기능을 제공하는 Flutter 관심 종목 모니터링 앱입니다.
+
+---
+
+## 미리보기
+
+| 전체 종목 | 관심 종목 | 알림 목록 |
+|:---:|:---:|:---:|
+| <img src="preview/all_stock.png" width="150"/> | <img src="preview/favorite_stock.png" width="150"/> | <img src="preview/notification_list.png" width="150"/> |
+
+| 상세 - 정보 | 상세 - 목표가 설정 | 상세 - 확장 패널 |
+|:---:|:---:|:---:|
+| <img src="preview/detail_info.png" width="150"/> | <img src="preview/detail_target.png" width="150"/> | <img src="preview/detail_pannel.png" width="150"/> |
+
+| 목표가 도달 알림 |
+|:---:|
+| <img src="preview/alert.png" width="150"/> |
+
+---
+
+## 주요 기능
+
+- **전체 종목 조회**: 종목 목록 조회 및 관심 종목 등록
+- **관심 종목 관리**: 관심 종목 추가/삭제, 실시간 가격 모니터링
+- **목표가 알림**: 상한/하한/양방향 목표가 설정 및 도달 시 알림
+- **스크롤 연동 네비게이션**: 섹션별 빠른 이동 및 자동 하이라이팅
+- **알림 히스토리**: 목표가 도달 알림 이력 관리
 
 ## 실행 방법
 
@@ -287,5 +313,32 @@ void _scrollNavToCenter(int index) {
 | `Scrollable.ensureVisible()` | 부드러운 스크롤 애니메이션 |
 | `_isProgrammaticScroll` 플래그 | 스크롤 이벤트 충돌 방지 |
 | `SliverPersistentHeader` | 네비게이션 바 고정 (Pinned) |
+
+---
+
+## 테스트
+
+테스트 코드는 **핵심 비즈니스 로직** 및 **핵심 구현 사항**에 집중하여 작성하였습니다.
+
+### 테스트 실행
+
+```bash
+flutter test
+```
+
+### 테스트 구성
+
+| 테스트 파일 | 테스트 내용 | 개수 |
+|------------|-----------|:----:|
+| `add_favorite_item_usecase_test.dart` | 관심종목 추가 로직, 중복 등록 예외 처리 | 3개 |
+| `check_target_price_usecase_test.dart` | 목표가 도달 감지 (상한/하한/양방향) | 11개 |
+| `favorite_provider_test.dart` | 상태관리, CRUD, 실시간 스트림 구독 | 8개 |
+| `favorite_detail_page_test.dart` | 스크롤 연동, 섹션 네비게이션 UI | 10개 |
+
+### 테스트 범위
+
+- **UseCase 테스트**: 목표가 도달 판정 로직, 중복 종목 예외 처리
+- **Provider 테스트**: 상태 변화, 로딩/에러 처리, 실시간 가격 스트림
+- **Widget 테스트**: 섹션 네비게이션 버튼, 스크롤 연동, Pinned 헤더 동작
 
 ---
