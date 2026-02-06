@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:realtime_stock_monitoring/core/constants/app_constants.dart';
-import 'package:realtime_stock_monitoring/core/di/injection.dart';
-import 'package:realtime_stock_monitoring/core/services/app_lifecycle_service.dart';
-import 'package:realtime_stock_monitoring/core/services/notification_service.dart';
-import 'package:realtime_stock_monitoring/core/utils/alert_type_extension.dart';
-import 'package:realtime_stock_monitoring/core/utils/price_formatter.dart';
-import 'package:realtime_stock_monitoring/feature/alert/presentation/provider/alert_provider.dart';
 import 'package:realtime_stock_monitoring/feature/favorite/domain/entity/favorite_item.dart';
 import 'package:realtime_stock_monitoring/feature/favorite/presentation/provider/favorite_provider.dart';
 import 'package:realtime_stock_monitoring/feature/favorite/presentation/widget/widget.dart';
@@ -61,20 +55,16 @@ class _FavoriteDetailPageState extends State<FavoriteDetailPage> {
   // 프로그래매틱 스크롤 중인지 여부 (스크롤 이벤트 충돌 방지)
   bool _isProgrammaticScroll = false;
 
-  // AlertProvider 참조 (dispose 시 콜백 해제용)
-  AlertProvider? _alertProvider;
-
   @override
   void initState() {
     super.initState();
     _scrollController = ScrollController()..addListener(_onScroll);
     _navScrollController = ScrollController();
 
-    // 가격 스트림 구독 및 목표가 알림 설정
+    // 가격 스트림 구독
     WidgetsBinding.instance.addPostFrameCallback((_) {
       final favoriteProvider = context.read<FavoriteProvider>()
         ..subscribeToPriceUpdates(widget.stockCode);
-      _alertProvider = context.read<AlertProvider>();
 
       // 기존 favorite item 정보 로드
       final existingItem = favoriteProvider.favoriteList
@@ -86,13 +76,6 @@ class _FavoriteDetailPageState extends State<FavoriteDetailPage> {
           _alertType = existingItem.alertType;
         });
       }
-
-      // 목표가 도달 시 알림 콜백 설정 (AlertProvider 사용)
-      _alertProvider?.onTargetReached = (item, priceUpdate) {
-        if (mounted) {
-          _showTargetPriceAlert(item, priceUpdate.currentPrice);
-        }
-      };
     });
   }
 
@@ -206,76 +189,8 @@ class _FavoriteDetailPageState extends State<FavoriteDetailPage> {
     }
   }
 
-  /// 목표가 도달 알림 표시
-  /// - 포그라운드: AlertDialog
-  /// - 백그라운드: 푸시 알림
-  void _showTargetPriceAlert(FavoriteItem item, int currentPrice) {
-    final alertTypeText = item.alertType.breachText;
-    final appLifecycle = AppLifecycleService();
-
-    if (appLifecycle.isForeground && mounted) {
-      // 포그라운드: AlertDialog 표시
-      _showAlertDialog(item, currentPrice, alertTypeText);
-    } else {
-      // 백그라운드: 푸시 알림
-      getIt<NotificationService>().showTargetPriceAlert(
-        stockName: item.stockName,
-        stockCode: item.stockCode,
-        currentPrice: currentPrice,
-        targetPrice: item.targetPrice ?? 0,
-        alertType: alertTypeText,
-      );
-    }
-  }
-
-  /// 포그라운드용 AlertDialog 표시
-  void _showAlertDialog(FavoriteItem item, int currentPrice, String alertTypeText) {
-    showDialog<void>(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: Row(
-          children: [
-            Icon(Icons.notifications_active, color: Colors.orange.shade700),
-            const SizedBox(width: 8),
-            const Text('목표가 도달'),
-          ],
-        ),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              item.stockName,
-              style: const TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const SizedBox(height: 12),
-            InfoRowWidget(label: '알림 조건', value: alertTypeText),
-            InfoRowWidget(label: '목표가', value: '${PriceFormatter.formatPriceWithComma(item.targetPrice ?? 0)}원'),
-            InfoRowWidget(
-              label: '현재가',
-              value: '${PriceFormatter.formatPriceWithComma(currentPrice)}원',
-              valueColor: currentPrice >= (item.targetPrice ?? 0) ? Colors.red : Colors.blue,
-            ),
-          ],
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('확인'),
-          ),
-        ],
-      ),
-    );
-  }
-
   @override
   void dispose() {
-    // AlertProvider 콜백 해제 (메모리 누수 방지)
-    _alertProvider?.onTargetReached = null;
-
     _scrollController
       ..removeListener(_onScroll)
       ..dispose();
