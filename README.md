@@ -10,9 +10,9 @@
 |:---:|:---:|:---:|
 | <img src="preview/all_stock.png" width="150"/> | <img src="preview/favorite_stock.png" width="150"/> | <img src="preview/notification_list.png" width="150"/> |
 
-| 상세 - 정보 | 상세 - 목표가 설정 | 상세 - 확장 패널 |
+| 상세 - 목표가 설정 | 상세 - 확장 패널 | 상세 - 정보 |
 |:---:|:---:|:---:|
-| <img src="preview/detail_info.png" width="150"/> | <img src="preview/detail_target.png" width="150"/> | <img src="preview/detail_pannel.png" width="150"/> |
+| <img src="preview/detail_target.png" width="150"/> | <img src="preview/detail_pannel.png" width="150"/> | <img src="preview/detail_info.png" width="150"/> |
 
 | 목표가 도달 알림 |
 |:---:|
