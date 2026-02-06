@@ -14,9 +14,9 @@
 |:---:|:---:|:---:|
 | <img src="preview/realtime_price.png" width="150"/> | <img src="preview/detail_target.png" width="150"/> | <img src="preview/detail_pannel.png" width="150"/> |
 
-| 상세 - 정보 | 목표가 도달 알림 |
-|:---:|:---:|
-| <img src="preview/detail_info.png" width="150"/> | <img src="preview/alert.png" width="150"/> |
+| 상세 - 정보 | 목표가 도달 알림 | 백그라운드 알림 |
+|:---:|:---:|:---:|
+| <img src="preview/detail_info.png" width="150"/> | <img src="preview/alert.png" width="150"/> | <img src="preview/background_alert.png" width="150"/> |
 
 ---
 
