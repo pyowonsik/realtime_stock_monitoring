@@ -1,7 +1,7 @@
 import 'package:hive/hive.dart';
-import 'package:realtime_item/core/constants/hive_type_ids.dart';
-import 'package:realtime_item/feature/alert/domain/entity/alert_history_item.dart';
-import 'package:realtime_item/feature/favorite/domain/entity/favorite_item.dart';
+import 'package:realtime_stock_monitoring/core/constants/hive_type_ids.dart';
+import 'package:realtime_stock_monitoring/feature/alert/domain/entity/alert_history_item.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/entity/favorite_item.dart';
 
 part 'alert_history_model.g.dart';
 

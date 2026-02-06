@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:realtime_item/core/constants/app_constants.dart';
-import 'package:realtime_item/feature/favorite/data/model/price_update_model.dart';
+import 'package:realtime_stock_monitoring/core/constants/app_constants.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/data/model/price_update_model.dart';
 import 'package:rxdart/rxdart.dart';
 
 /// Mock WebSocket 데이터소스 인터페이스

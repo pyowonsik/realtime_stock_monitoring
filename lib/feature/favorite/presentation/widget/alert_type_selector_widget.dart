@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:realtime_item/feature/favorite/domain/entity/favorite_item.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/entity/favorite_item.dart';
 
 /// 알림 조건 선택 위젯
 class AlertTypeSelectorWidget extends StatelessWidget {

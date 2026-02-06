@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:realtime_item/core/utils/price_formatter.dart';
-import 'package:realtime_item/feature/favorite/presentation/widget/comparison_item_widget.dart';
-import 'package:realtime_item/feature/favorite/presentation/widget/info_row_widget.dart';
-import 'package:realtime_item/feature/favorite/presentation/widget/shareholder_bar_widget.dart';
-import 'package:realtime_item/feature/favorite/presentation/widget/table_widgets.dart';
+import 'package:realtime_stock_monitoring/core/utils/price_formatter.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/widget/comparison_item_widget.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/widget/info_row_widget.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/widget/shareholder_bar_widget.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/widget/table_widgets.dart';
 
 /// 요약 섹션 위젯
 class SummarySectionWidget extends StatelessWidget {

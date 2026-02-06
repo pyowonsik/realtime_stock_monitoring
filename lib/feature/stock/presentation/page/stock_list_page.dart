@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:realtime_item/feature/favorite/domain/entity/favorite_item.dart';
-import 'package:realtime_item/feature/favorite/presentation/provider/favorite_provider.dart';
-import 'package:realtime_item/feature/favorite/presentation/provider/favorite_state.dart';
-import 'package:realtime_item/feature/stock/domain/entity/stock.dart';
-import 'package:realtime_item/feature/stock/presentation/provider/stock_provider.dart';
-import 'package:realtime_item/feature/stock/presentation/provider/stock_state.dart';
-import 'package:realtime_item/feature/stock/presentation/widget/stock_list_item_widget.dart';
-import 'package:realtime_item/shared/presentation/widgets/widgets.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/entity/favorite_item.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/provider/favorite_provider.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/provider/favorite_state.dart';
+import 'package:realtime_stock_monitoring/feature/stock/domain/entity/stock.dart';
+import 'package:realtime_stock_monitoring/feature/stock/presentation/provider/stock_provider.dart';
+import 'package:realtime_stock_monitoring/feature/stock/presentation/provider/stock_state.dart';
+import 'package:realtime_stock_monitoring/feature/stock/presentation/widget/stock_list_item_widget.dart';
+import 'package:realtime_stock_monitoring/shared/presentation/widgets/widgets.dart';
 
 /// 전체 종목 목록 페이지
 class StockListPage extends StatefulWidget {

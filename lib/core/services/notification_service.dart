@@ -1,5 +1,5 @@
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:realtime_item/core/utils/price_formatter.dart';
+import 'package:realtime_stock_monitoring/core/utils/price_formatter.dart';
 
 /// 로컬 알림 서비스
 class NotificationService {

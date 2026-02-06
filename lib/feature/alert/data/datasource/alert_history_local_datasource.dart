@@ -1,6 +1,6 @@
 import 'package:hive/hive.dart';
-import 'package:realtime_item/feature/alert/data/model/alert_history_model.dart';
-import 'package:realtime_item/feature/alert/domain/entity/alert_history_item.dart';
+import 'package:realtime_stock_monitoring/feature/alert/data/model/alert_history_model.dart';
+import 'package:realtime_stock_monitoring/feature/alert/domain/entity/alert_history_item.dart';
 
 /// 알림 히스토리 로컬 데이터소스 인터페이스
 abstract class AlertHistoryLocalDataSource {

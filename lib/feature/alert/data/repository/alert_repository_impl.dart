@@ -1,7 +1,7 @@
-import 'package:realtime_item/feature/alert/data/datasource/alert_history_local_datasource.dart';
-import 'package:realtime_item/feature/alert/data/datasource/alerted_stocks_local_datasource.dart';
-import 'package:realtime_item/feature/alert/domain/entity/alert_history_item.dart';
-import 'package:realtime_item/feature/alert/domain/repository/alert_repository.dart';
+import 'package:realtime_stock_monitoring/feature/alert/data/datasource/alert_history_local_datasource.dart';
+import 'package:realtime_stock_monitoring/feature/alert/data/datasource/alerted_stocks_local_datasource.dart';
+import 'package:realtime_stock_monitoring/feature/alert/domain/entity/alert_history_item.dart';
+import 'package:realtime_stock_monitoring/feature/alert/domain/repository/alert_repository.dart';
 
 /// 알림 히스토리 레포지토리 구현체
 class AlertHistoryRepositoryImpl implements AlertHistoryRepository {

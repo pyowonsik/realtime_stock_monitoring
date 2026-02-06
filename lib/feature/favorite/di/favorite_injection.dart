@@ -1,10 +1,10 @@
 import 'package:get_it/get_it.dart';
-import 'package:realtime_item/feature/favorite/data/datasource/favorite_local_datasource.dart';
-import 'package:realtime_item/feature/favorite/data/datasource/favorite_remote_datasource.dart';
-import 'package:realtime_item/feature/favorite/data/repository/favorite_repository_impl.dart';
-import 'package:realtime_item/feature/favorite/domain/repository/favorite_repository.dart';
-import 'package:realtime_item/feature/favorite/domain/usecase/usecase.dart';
-import 'package:realtime_item/feature/favorite/presentation/provider/favorite_provider.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/data/datasource/favorite_local_datasource.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/data/datasource/favorite_remote_datasource.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/data/repository/favorite_repository_impl.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/repository/favorite_repository.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/usecase/usecase.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/provider/favorite_provider.dart';
 
 /// Favorite feature 의존성 주입 설정
 void registerFavoriteDependencies(GetIt getIt) {

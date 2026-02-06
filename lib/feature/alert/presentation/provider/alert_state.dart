@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:realtime_item/feature/alert/domain/entity/alert_history_item.dart';
+import 'package:realtime_stock_monitoring/feature/alert/domain/entity/alert_history_item.dart';
 
 part 'alert_state.freezed.dart';
 

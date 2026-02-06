@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:realtime_item/core/utils/alert_type_extension.dart';
-import 'package:realtime_item/core/utils/date_formatter.dart';
-import 'package:realtime_item/core/utils/price_formatter.dart';
-import 'package:realtime_item/feature/alert/domain/entity/alert_history_item.dart';
+import 'package:realtime_stock_monitoring/core/utils/alert_type_extension.dart';
+import 'package:realtime_stock_monitoring/core/utils/date_formatter.dart';
+import 'package:realtime_stock_monitoring/core/utils/price_formatter.dart';
+import 'package:realtime_stock_monitoring/feature/alert/domain/entity/alert_history_item.dart';
 
 /// 알림 히스토리 아이템 위젯
 class AlertHistoryItemWidget extends StatelessWidget {

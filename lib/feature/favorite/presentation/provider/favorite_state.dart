@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:realtime_item/feature/favorite/domain/entity/favorite_item.dart';
-import 'package:realtime_item/shared/domain/entity/price_update.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/entity/favorite_item.dart';
+import 'package:realtime_stock_monitoring/shared/domain/entity/price_update.dart';
 
 part 'favorite_state.freezed.dart';
 

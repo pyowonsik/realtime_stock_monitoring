@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:realtime_item/feature/stock/domain/entity/stock.dart';
+import 'package:realtime_stock_monitoring/feature/stock/domain/entity/stock.dart';
 
 /// 종목 리스트 아이템 위젯
 class StockListItemWidget extends StatelessWidget {

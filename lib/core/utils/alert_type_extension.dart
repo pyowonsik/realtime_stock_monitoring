@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:realtime_item/feature/favorite/domain/entity/favorite_item.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/entity/favorite_item.dart';
 
 /// AlertType 확장 메서드
 extension AlertTypeExtension on AlertType {

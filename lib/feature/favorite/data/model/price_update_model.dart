@@ -1,4 +1,4 @@
-import 'package:realtime_item/shared/domain/entity/price_update.dart';
+import 'package:realtime_stock_monitoring/shared/domain/entity/price_update.dart';
 
 /// 가격 업데이트 모델 (Mock WebSocket 데이터용)
 class PriceUpdateModel {

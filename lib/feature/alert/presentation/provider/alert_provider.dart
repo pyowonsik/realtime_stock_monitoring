@@ -1,11 +1,11 @@
 import 'package:flutter/foundation.dart';
-import 'package:realtime_item/core/utils/safe_async.dart';
-import 'package:realtime_item/feature/alert/domain/entity/alert_history_item.dart';
-import 'package:realtime_item/feature/alert/domain/usecase/usecase.dart';
-import 'package:realtime_item/feature/alert/presentation/provider/alert_state.dart';
-import 'package:realtime_item/feature/favorite/domain/entity/favorite_item.dart';
-import 'package:realtime_item/feature/favorite/domain/usecase/usecase.dart';
-import 'package:realtime_item/shared/domain/entity/price_update.dart';
+import 'package:realtime_stock_monitoring/core/utils/safe_async.dart';
+import 'package:realtime_stock_monitoring/feature/alert/domain/entity/alert_history_item.dart';
+import 'package:realtime_stock_monitoring/feature/alert/domain/usecase/usecase.dart';
+import 'package:realtime_stock_monitoring/feature/alert/presentation/provider/alert_state.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/entity/favorite_item.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/usecase/usecase.dart';
+import 'package:realtime_stock_monitoring/shared/domain/entity/price_update.dart';
 
 /// 알림 상태 관리 Provider
 class AlertProvider extends ChangeNotifier {

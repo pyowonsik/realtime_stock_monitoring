@@ -1,9 +1,9 @@
-import 'package:realtime_item/feature/favorite/data/datasource/favorite_local_datasource.dart';
-import 'package:realtime_item/feature/favorite/data/datasource/favorite_remote_datasource.dart';
-import 'package:realtime_item/feature/favorite/data/model/favorite_item_model.dart';
-import 'package:realtime_item/feature/favorite/domain/entity/favorite_item.dart';
-import 'package:realtime_item/feature/favorite/domain/repository/favorite_repository.dart';
-import 'package:realtime_item/shared/domain/entity/price_update.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/data/datasource/favorite_local_datasource.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/data/datasource/favorite_remote_datasource.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/data/model/favorite_item_model.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/entity/favorite_item.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/repository/favorite_repository.dart';
+import 'package:realtime_stock_monitoring/shared/domain/entity/price_update.dart';
 
 /// 관심 종목 레포지토리 구현체
 class FavoriteRepositoryImpl implements FavoriteRepository {

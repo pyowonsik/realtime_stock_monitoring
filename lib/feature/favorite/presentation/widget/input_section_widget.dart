@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:realtime_item/feature/favorite/domain/entity/favorite_item.dart';
-import 'package:realtime_item/feature/favorite/presentation/widget/alert_type_selector_widget.dart';
-import 'package:realtime_item/feature/favorite/presentation/widget/saved_alert_tile_widget.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/entity/favorite_item.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/widget/alert_type_selector_widget.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/widget/saved_alert_tile_widget.dart';
 
 /// 입력 섹션 위젯 (목표가 설정)
 class InputSectionWidget extends StatefulWidget {

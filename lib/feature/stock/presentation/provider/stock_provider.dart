@@ -1,9 +1,9 @@
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
-import 'package:realtime_item/feature/stock/domain/entity/stock.dart';
-import 'package:realtime_item/feature/stock/domain/usecase/get_stocks_usecase.dart';
-import 'package:realtime_item/feature/stock/presentation/provider/stock_state.dart';
+import 'package:realtime_stock_monitoring/feature/stock/domain/entity/stock.dart';
+import 'package:realtime_stock_monitoring/feature/stock/domain/usecase/get_stocks_usecase.dart';
+import 'package:realtime_stock_monitoring/feature/stock/presentation/provider/stock_state.dart';
 
 /// 종목 상태 관리 Provider
 class StockProvider extends ChangeNotifier {

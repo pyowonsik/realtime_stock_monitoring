@@ -1,5 +1,5 @@
-import 'package:realtime_item/feature/favorite/domain/entity/favorite_item.dart';
-import 'package:realtime_item/shared/domain/entity/price_update.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/entity/favorite_item.dart';
+import 'package:realtime_stock_monitoring/shared/domain/entity/price_update.dart';
 
 /// 관심 종목 레포지토리 인터페이스
 abstract class FavoriteRepository {

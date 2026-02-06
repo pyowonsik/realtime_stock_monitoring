@@ -1,4 +1,4 @@
-import 'package:realtime_item/feature/stock/domain/entity/stock.dart';
+import 'package:realtime_stock_monitoring/feature/stock/domain/entity/stock.dart';
 
 /// 종목 목록 상태 Sealed Class
 sealed class StockState {

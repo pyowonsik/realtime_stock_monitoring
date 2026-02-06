@@ -1,4 +1,4 @@
-import 'package:realtime_item/feature/favorite/domain/repository/favorite_repository.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/repository/favorite_repository.dart';
 
 /// 실시간 가격 업데이트 구독 해제 유즈케이스
 class UnsubscribePriceUpdatesUseCase {

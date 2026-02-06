@@ -1,5 +1,5 @@
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:realtime_item/feature/favorite/data/model/favorite_item_model.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/data/model/favorite_item_model.dart';
 
 /// 관심 종목 로컬 데이터소스 인터페이스
 abstract class FavoriteLocalDataSource {

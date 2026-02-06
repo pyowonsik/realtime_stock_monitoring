@@ -1,4 +1,4 @@
-import 'package:realtime_item/feature/favorite/domain/repository/favorite_repository.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/repository/favorite_repository.dart';
 
 /// 관심 종목 삭제 유즈케이스
 class DeleteFavoriteItemUseCase {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:realtime_item/core/utils/price_formatter.dart';
-import 'package:realtime_item/feature/favorite/domain/entity/favorite_item.dart';
+import 'package:realtime_stock_monitoring/core/utils/price_formatter.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/entity/favorite_item.dart';
 
 /// 관심 종목 리스트 아이템 위젯
 class FavoriteItemWidget extends StatelessWidget {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:realtime_item/feature/alert/presentation/provider/alert_provider.dart';
-import 'package:realtime_item/feature/alert/presentation/widget/alert_history_item_widget.dart';
-import 'package:realtime_item/shared/presentation/widgets/confirm_dialog.dart';
+import 'package:realtime_stock_monitoring/feature/alert/presentation/provider/alert_provider.dart';
+import 'package:realtime_stock_monitoring/feature/alert/presentation/widget/alert_history_item_widget.dart';
+import 'package:realtime_stock_monitoring/shared/presentation/widgets/confirm_dialog.dart';
 
 /// 알림 히스토리 페이지
 class AlertHistoryPage extends StatelessWidget {

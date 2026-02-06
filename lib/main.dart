@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:realtime_item/core/constants/app_constants.dart';
-import 'package:realtime_item/core/di/injection.dart';
-import 'package:realtime_item/core/services/app_lifecycle_service.dart';
-import 'package:realtime_item/feature/alert/presentation/page/alert_history_page.dart';
-import 'package:realtime_item/feature/alert/presentation/provider/alert_provider.dart';
-import 'package:realtime_item/feature/favorite/presentation/page/favorite_list_page.dart';
-import 'package:realtime_item/feature/favorite/presentation/provider/favorite_provider.dart';
-import 'package:realtime_item/feature/stock/presentation/page/stock_list_page.dart';
-import 'package:realtime_item/feature/stock/presentation/provider/stock_provider.dart';
+import 'package:realtime_stock_monitoring/core/constants/app_constants.dart';
+import 'package:realtime_stock_monitoring/core/di/injection.dart';
+import 'package:realtime_stock_monitoring/core/services/app_lifecycle_service.dart';
+import 'package:realtime_stock_monitoring/feature/alert/presentation/page/alert_history_page.dart';
+import 'package:realtime_stock_monitoring/feature/alert/presentation/provider/alert_provider.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/page/favorite_list_page.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/provider/favorite_provider.dart';
+import 'package:realtime_stock_monitoring/feature/stock/presentation/page/stock_list_page.dart';
+import 'package:realtime_stock_monitoring/feature/stock/presentation/provider/stock_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

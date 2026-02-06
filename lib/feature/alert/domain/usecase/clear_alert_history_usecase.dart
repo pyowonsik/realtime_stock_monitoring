@@ -1,4 +1,4 @@
-import 'package:realtime_item/feature/alert/domain/repository/alert_repository.dart';
+import 'package:realtime_stock_monitoring/feature/alert/domain/repository/alert_repository.dart';
 
 /// 알림 히스토리 전체 삭제 UseCase
 class ClearAlertHistoryUseCase {

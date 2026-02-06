@@ -1,5 +1,5 @@
-import 'package:realtime_item/feature/favorite/domain/entity/favorite_item.dart';
-import 'package:realtime_item/shared/domain/entity/price_update.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/entity/favorite_item.dart';
+import 'package:realtime_stock_monitoring/shared/domain/entity/price_update.dart';
 
 /// 목표가 도달 여부 확인 유즈케이스
 class CheckTargetPriceUseCase {

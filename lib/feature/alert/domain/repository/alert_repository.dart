@@ -1,4 +1,4 @@
-import 'package:realtime_item/feature/alert/domain/entity/alert_history_item.dart';
+import 'package:realtime_stock_monitoring/feature/alert/domain/entity/alert_history_item.dart';
 
 /// 알림 히스토리 레포지토리 인터페이스
 abstract class AlertHistoryRepository {

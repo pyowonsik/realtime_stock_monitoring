@@ -1,13 +1,13 @@
 import 'package:flutter/foundation.dart';
 import 'package:get_it/get_it.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:realtime_item/core/constants/hive_type_ids.dart';
-import 'package:realtime_item/core/services/notification_service.dart';
-import 'package:realtime_item/feature/alert/data/model/alert_history_model.dart';
-import 'package:realtime_item/feature/alert/di/alert_injection.dart';
-import 'package:realtime_item/feature/favorite/data/model/favorite_item_model.dart';
-import 'package:realtime_item/feature/favorite/di/favorite_injection.dart';
-import 'package:realtime_item/feature/stock/di/stock_injection.dart';
+import 'package:realtime_stock_monitoring/core/constants/hive_type_ids.dart';
+import 'package:realtime_stock_monitoring/core/services/notification_service.dart';
+import 'package:realtime_stock_monitoring/feature/alert/data/model/alert_history_model.dart';
+import 'package:realtime_stock_monitoring/feature/alert/di/alert_injection.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/data/model/favorite_item_model.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/di/favorite_injection.dart';
+import 'package:realtime_stock_monitoring/feature/stock/di/stock_injection.dart';
 
 final GetIt getIt = GetIt.instance;
 

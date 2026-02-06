@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:realtime_item/feature/favorite/domain/entity/favorite_item.dart';
-import 'package:realtime_item/feature/favorite/presentation/page/favorite_detail_page.dart';
-import 'package:realtime_item/feature/favorite/presentation/provider/favorite_provider.dart';
-import 'package:realtime_item/feature/favorite/presentation/provider/favorite_state.dart';
-import 'package:realtime_item/feature/favorite/presentation/widget/favorite_item_widget.dart';
-import 'package:realtime_item/shared/domain/entity/price_update.dart';
-import 'package:realtime_item/shared/presentation/widgets/widgets.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/entity/favorite_item.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/page/favorite_detail_page.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/provider/favorite_provider.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/provider/favorite_state.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/widget/favorite_item_widget.dart';
+import 'package:realtime_stock_monitoring/shared/domain/entity/price_update.dart';
+import 'package:realtime_stock_monitoring/shared/presentation/widgets/widgets.dart';
 
 /// 관심 종목 목록 페이지
 class FavoriteListPage extends StatefulWidget {

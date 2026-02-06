@@ -1,4 +1,4 @@
-name: realtime_item
+name: realtime_stock_monitoring
 description: "실시간 관심 종목 모니터링 앱"
 publish_to: 'none'
 version: 1.0.0+1

@@ -1,4 +1,4 @@
-package com.example.realtime_item
+package com.example.realtime_stock_monitoring
 
 import io.flutter.embedding.android.FlutterActivity
 

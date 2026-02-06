@@ -1,12 +1,12 @@
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
-import 'package:realtime_item/core/utils/safe_async.dart';
-import 'package:realtime_item/feature/alert/presentation/provider/alert_provider.dart';
-import 'package:realtime_item/feature/favorite/domain/entity/favorite_item.dart';
-import 'package:realtime_item/feature/favorite/domain/usecase/usecase.dart';
-import 'package:realtime_item/feature/favorite/presentation/provider/favorite_state.dart';
-import 'package:realtime_item/shared/domain/entity/price_update.dart';
+import 'package:realtime_stock_monitoring/core/utils/safe_async.dart';
+import 'package:realtime_stock_monitoring/feature/alert/presentation/provider/alert_provider.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/entity/favorite_item.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/usecase/usecase.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/provider/favorite_state.dart';
+import 'package:realtime_stock_monitoring/shared/domain/entity/price_update.dart';
 
 /// 관심 종목 상태 관리 Provider
 class FavoriteProvider extends ChangeNotifier {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:realtime_item/feature/favorite/presentation/widget/navigation_button_widget.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/widget/navigation_button_widget.dart';
 
 /// 섹션 네비게이션 버튼 위젯
 class SectionNavigationWidget extends StatelessWidget {

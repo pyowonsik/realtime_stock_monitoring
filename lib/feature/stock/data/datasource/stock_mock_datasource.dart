@@ -1,4 +1,4 @@
-import 'package:realtime_item/feature/stock/domain/entity/stock.dart';
+import 'package:realtime_stock_monitoring/feature/stock/domain/entity/stock.dart';
 
 /// Mock 종목 데이터소스 인터페이스
 abstract class StockMockDataSource {

@@ -1,5 +1,5 @@
-import 'package:realtime_item/feature/favorite/domain/entity/favorite_item.dart';
-import 'package:realtime_item/feature/favorite/domain/repository/favorite_repository.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/entity/favorite_item.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/repository/favorite_repository.dart';
 
 /// 중복 관심 종목 예외
 class DuplicateFavoriteItemException implements Exception {

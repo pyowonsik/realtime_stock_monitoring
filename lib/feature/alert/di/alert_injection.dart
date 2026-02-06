@@ -1,11 +1,11 @@
 import 'package:get_it/get_it.dart';
-import 'package:realtime_item/feature/alert/data/datasource/alert_history_local_datasource.dart';
-import 'package:realtime_item/feature/alert/data/datasource/alerted_stocks_local_datasource.dart';
-import 'package:realtime_item/feature/alert/data/repository/alert_repository_impl.dart';
-import 'package:realtime_item/feature/alert/domain/repository/alert_repository.dart';
-import 'package:realtime_item/feature/alert/domain/usecase/usecase.dart';
-import 'package:realtime_item/feature/alert/presentation/provider/alert_provider.dart';
-import 'package:realtime_item/feature/favorite/domain/usecase/usecase.dart';
+import 'package:realtime_stock_monitoring/feature/alert/data/datasource/alert_history_local_datasource.dart';
+import 'package:realtime_stock_monitoring/feature/alert/data/datasource/alerted_stocks_local_datasource.dart';
+import 'package:realtime_stock_monitoring/feature/alert/data/repository/alert_repository_impl.dart';
+import 'package:realtime_stock_monitoring/feature/alert/domain/repository/alert_repository.dart';
+import 'package:realtime_stock_monitoring/feature/alert/domain/usecase/usecase.dart';
+import 'package:realtime_stock_monitoring/feature/alert/presentation/provider/alert_provider.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/usecase/usecase.dart';
 
 /// Alert feature 의존성 주입 설정
 void registerAlertDependencies(GetIt getIt) {

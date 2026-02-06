@@ -1,6 +1,6 @@
-import 'package:realtime_item/feature/stock/data/datasource/stock_mock_datasource.dart';
-import 'package:realtime_item/feature/stock/domain/entity/stock.dart';
-import 'package:realtime_item/feature/stock/domain/repository/stock_repository.dart';
+import 'package:realtime_stock_monitoring/feature/stock/data/datasource/stock_mock_datasource.dart';
+import 'package:realtime_stock_monitoring/feature/stock/domain/entity/stock.dart';
+import 'package:realtime_stock_monitoring/feature/stock/domain/repository/stock_repository.dart';
 
 /// 종목 레포지토리 구현체
 class StockRepositoryImpl implements StockRepository {

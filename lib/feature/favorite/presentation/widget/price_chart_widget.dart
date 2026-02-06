@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:realtime_item/core/utils/price_formatter.dart';
+import 'package:realtime_stock_monitoring/core/utils/price_formatter.dart';
 
 /// 가격 차트 위젯 (Mock 데이터 사용)
 class PriceChartWidget extends StatefulWidget {

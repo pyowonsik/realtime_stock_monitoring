@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:realtime_item/core/constants/app_constants.dart';
-import 'package:realtime_item/core/di/injection.dart';
-import 'package:realtime_item/core/services/app_lifecycle_service.dart';
-import 'package:realtime_item/core/services/notification_service.dart';
-import 'package:realtime_item/core/utils/alert_type_extension.dart';
-import 'package:realtime_item/core/utils/price_formatter.dart';
-import 'package:realtime_item/feature/alert/presentation/provider/alert_provider.dart';
-import 'package:realtime_item/feature/favorite/domain/entity/favorite_item.dart';
-import 'package:realtime_item/feature/favorite/presentation/provider/favorite_provider.dart';
-import 'package:realtime_item/feature/favorite/presentation/widget/widget.dart';
+import 'package:realtime_stock_monitoring/core/constants/app_constants.dart';
+import 'package:realtime_stock_monitoring/core/di/injection.dart';
+import 'package:realtime_stock_monitoring/core/services/app_lifecycle_service.dart';
+import 'package:realtime_stock_monitoring/core/services/notification_service.dart';
+import 'package:realtime_stock_monitoring/core/utils/alert_type_extension.dart';
+import 'package:realtime_stock_monitoring/core/utils/price_formatter.dart';
+import 'package:realtime_stock_monitoring/feature/alert/presentation/provider/alert_provider.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/domain/entity/favorite_item.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/provider/favorite_provider.dart';
+import 'package:realtime_stock_monitoring/feature/favorite/presentation/widget/widget.dart';
 
 /// 섹션 이름 목록
 const List<String> _sectionNames = [

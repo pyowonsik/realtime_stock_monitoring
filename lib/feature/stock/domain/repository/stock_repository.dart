@@ -1,4 +1,4 @@
-import 'package:realtime_item/feature/stock/domain/entity/stock.dart';
+import 'package:realtime_stock_monitoring/feature/stock/domain/entity/stock.dart';
 
 /// 종목 레포지토리 인터페이스
 abstract class StockRepository {
